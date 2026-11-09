@@ -1,9 +1,11 @@
-export const heroImg = "/assets/akr1390-hero.png";
-export const enduroImg = "/assets/akira-590n-enduro.png";
-export const motocrossImg = "/assets/akira-790-motocross.png";
-export const adventureImg = "/assets/akira-990r-adventure.png";
-export const logoImg = "/assets/akira-logo.png";
-export const roadImg = "/assets/akr1390.jpg";
+const asset = (path: string) => `${import.meta.env.BASE_URL}assets/${path}`;
+
+export const heroImg = asset("akr1390-hero.png");
+export const enduroImg = asset("akira-590n-enduro.png");
+export const motocrossImg = asset("akira-790-motocross.png");
+export const adventureImg = asset("akira-990r-adventure.png");
+export const logoImg = asset("akira-logo.png");
+export const roadImg = asset("akr1390.jpg");
 
 export { logoImg as default };
 
@@ -37,7 +39,7 @@ export const bikes: Bike[] = [
     name: "AKR 1390",
     cat: "Naked",
     img: heroImg,
-    audioSrc: "/assets/aistudio/AKR1390_3b482cad.mp3",
+    audioSrc: asset("aistudio/AKR1390_3b482cad.mp3"),
     tankCapacityLiters: 17.5,
     fuelConsumptionLPer100Km: 6.5,
     fuelConsumptionKmPerL: 15.38,
@@ -83,7 +85,7 @@ export const bikes: Bike[] = [
     name: "AKR 990R",
     cat: "Adventure",
     img: adventureImg,
-    audioSrc: "/assets/aistudio/AKR_990R_b51bf02a.mp3",
+    audioSrc: asset("aistudio/AKR_990R_b51bf02a.mp3"),
     tankCapacityLiters: 23.0,
     fuelConsumptionLPer100Km: 4.8,
     fuelConsumptionKmPerL: 20.83,
@@ -129,7 +131,7 @@ export const bikes: Bike[] = [
     name: "AKR 790",
     cat: "Motocross",
     img: motocrossImg,
-    audioSrc: "/assets/aistudio/AKR_790_922c553a.mp3",
+    audioSrc: asset("aistudio/AKR_790_922c553a.mp3"),
     tankCapacityLiters: 7.2,
     fuelConsumptionLPer100Km: 4.2,
     fuelConsumptionKmPerL: 23.81,
@@ -175,7 +177,7 @@ export const bikes: Bike[] = [
     name: "AKR 590N",
     cat: "Enduro",
     img: enduroImg,
-    audioSrc: "/assets/aistudio/AKR_590_7bb57afc.mp3",
+    audioSrc: asset("aistudio/AKR_590_7bb57afc.mp3"),
     tankCapacityLiters: 8.5,
     fuelConsumptionLPer100Km: 3.8,
     fuelConsumptionKmPerL: 26.32,
